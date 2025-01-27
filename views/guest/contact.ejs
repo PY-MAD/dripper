@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <h1 class="text-center m-3">
+        contact with us !
+    </h1>
+    <form action="/contact" autocomplete="off" method="post" class="w-50 m-auto">
+        <div class="name form-group ">
+            <label for="name">your name</label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="your name">
+        </div>
+        <div class="email form-group my-3">
+            <label for="email">your email</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="example@example.com">
+        </div>
+        <div class="subject form-group my-3">
+            <label for="subject">the subject</label>
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="the subject">
+        </div>
+        <div class="msg form-group my-3">
+            <label for="msg">your message</label>
+            <textarea class="form-control" style="min-height: 100px;" name="msg" id="msg" placeholder="your msg"></textarea>
+        </div>
+        <div class="submit form-group text-center">
+            <button type="submit" class="btn btn-primary">send your message !</button>
+        </div>
+    </form>
+</div>

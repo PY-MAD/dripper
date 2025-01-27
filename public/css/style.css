@@ -1,0 +1,26 @@
+:root{
+    --bs-font-sans-serif: 'Rubik', sans-serif
+}
+
+.container-xxl{
+    max-width: 1530px;
+}
+
+body{
+    background-image: url("/img/pattren_coffee.jpg");
+    background-color: rgb(243, 243, 243);
+}
+.active_link{
+    font-weight: bold;
+}
+.category_link{
+    text-decoration: none;
+    transition: transform .2s;
+}
+.category_link:hover{
+    transform: scale(0.85);
+}
+.category_link .categroy_title{
+    margin: 10px 0px;
+    font-size: 20px;
+}

@@ -1,0 +1,30 @@
+<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <a href="/dashboard" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <img src="/img/logo.png" width="75" alt="">
+    </a>
+
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="/dashboard/Recipes" class="nav-link px-2 link-secondary">Recipes</a></li>
+        <li><a href="/dashboard/myrecipes" class="nav-link px-2 link-secondary">My Recipes</a></li>
+        <li><a href="/dashboard/addRecipe" class="nav-link px-2 link-secondary">Add Recipes</a></li>
+    </ul>
+
+    <div class="col-md-3 text-end">
+        <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <div class="text-start d-flex flex-row-reverse align-items-center mb-3 pointer">
+                <div class="img mx-3">
+                    <img src="<%-user.profileImage %>" class="rounded-5" width="30px" alt="">
+                </div>
+                <div class="username link-secondary"><%- user.firstName %></div>
+            </div>
+        </a>
+        <div class="collapse" id="collapseExample">
+            <div class="">
+                    <a href="/logout" class="btn btn-danger">logout</a>
+            </div>
+        </div>
+        <form method="POST" action="/search" autocomplete="off">
+            <input type="search" class="form-control" name="searchTerm" id="searchTerm" placeholder="Search...">
+        </form>
+    </div>
+</header>

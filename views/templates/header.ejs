@@ -1,0 +1,16 @@
+<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <img src="/img/logo.png" width="75" alt="">
+        <div class="logoText fw-bold mx-4">dripper</div>
+    </a>
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="/" class="nav-link <%- activePage == "home" ? "active_link":"" %> px-2 link-secondary">Home</a></li>
+        <li><a href="/about" class="nav-link  <%- activePage == "about" ? "active_link":"" %>  px-2 link-secondary">About</a></li>
+        <li><a href="/contact" class="nav-link  <%- activePage == "contact" ? "active_link":"" %> px-2 link-secondary">Contact</a></li>
+    </ul>
+
+    <div class="col-md-3 text-end">
+        <a href="/auth/google" class="btn btn-primary btn-dark btn px-4 me-md-2">login</a>
+        <a href="/auth/google" class="btn btn-outline-secondary btn px-4 me-md-2">sign up</a>
+    </div>
+</header>
