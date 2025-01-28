@@ -1,6 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const dashboardController = require("../controller/dashboardController");
+const addRecipeController = require("../controller/recipes/add");
+const deleteRecipeController = require("../controller/recipes/delete");
+const updateRecipeController = require("../controller/recipes/update");
 
 
 router.get("/dashboard",dashboardController.dashboard)
@@ -12,12 +15,12 @@ router.get("/dashboard/category/:category",dashboardController.categorySpecificR
 // recipes
 router.get("/dashboard/category/:category/:id",dashboardController.displayTheRecipe)
 // add recipes
-router.get("/dashboard/addRecipe",dashboardController.addRecipe)
-router.post("/dashboard/addRecipe",dashboardController.addRecipeBtn);
+router.get("/dashboard/addRecipe",addRecipeController.addRecipe)
+router.post("/dashboard/addRecipe",addRecipeController.addRecipeBtn);
 // delete recipe
-router.delete("/dashboard/delete/:id",dashboardController.deleteRecipe)
+router.delete("/dashboard/delete/:id",deleteRecipeController.deleteRecipe)
 // update recipe
-router.get("/dashboard/update/:id",dashboardController.updateRecipe)
-router.put("/dashboard/update/:id",dashboardController.updateRecipeBtn);
+router.get("/dashboard/update/:id",updateRecipeController.updateRecipe)
+router.put("/dashboard/update/:id",updateRecipeController.updateRecipeBtn);
 
 module.exports = router;

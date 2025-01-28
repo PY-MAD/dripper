@@ -7,10 +7,17 @@ const session = require("express-session");
 const passport = require("passport");
 const MongoStore = require("connect-mongo");
 const uploader = require("express-fileupload");
+const cors = require("cors");
+const nodemailer = require("nodemailer");
 
 
 const app = express();
 const port = process.env.PORT || 3000;
+const corsOptions = {
+  origin: '*',  // Allows requests from all domains. Specify actual domain in production for security.
+  optionsSuccessStatus: 200 // Ensure compatibility by setting OPTIONS success status to 200 OK.
+};
+
 
 app.use(session({
   secret:"mad",
@@ -22,7 +29,16 @@ app.use(session({
 }));
 
 app.use(methodOverride("_method"));
-
+app.use(cors(corsOptions));
+exports.transporter = nodemailer.createTransport({
+  host: process.env.SMTP_HOST,
+  port: 587,
+  secure: false, // use false for STARTTLS; true for SSL on port 465
+  auth: {
+      user: process.env.SMTP_USERNAME,
+      pass: process.env.SMTP_PASSWORD
+  }
+});
 
 // passPort
 app.use(passport.initialize());

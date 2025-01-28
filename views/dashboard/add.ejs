@@ -1,6 +1,12 @@
 <div class="container">
     <h1 class="text-center m-5">add your recipe</h1>
     <form action="/dashboard/addRecipe" class="form w-50 m-auto" method="post" enctype="multipart/form-data">
+        <% if(error){ %>
+            <div class="alert alert-danger" role="alert">
+                <%- error %>
+                <% error = ""; %>
+            </div>
+        <% } %>
         <div class="name form-group my-3">
             <label for="name" class="">name of recipe : </label>
             <input type="text" class="form-control" name="name" id="name" placeholder="add the name...">

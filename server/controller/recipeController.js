@@ -1,3 +1,4 @@
+let {transporter} = require("../../app");
 /**
  * GET/
  * Homepage
@@ -37,6 +38,31 @@ exports.contactPage = async(req,res)=>{
         layout:"./layouts/main.ejs"
     });
 }
+
+/**
+ * POST/
+ * Contact
+ */
+
+exports.contactPageBtn = async(req,res)=>{
+    try {
+        const {name,email,subject,msg} = req.body;
+        const mailOptions = {
+        from: process.env.SENDER_EMAIL, 
+        to: process.env.SENDER_EMAIL,
+        replyTo: process.env.REPLY_TO,
+        subject: `name : ${name} email : ${email} ---- ${subject}`, 
+        text: msg 
+    };
+    const info = await transporter.sendMail(mailOptions);
+    res.redirect("/")
+    console.log('Email sent:', info.response);
+    } catch (error) {
+        console.log(error);
+    }
+
+}
+
 
 /**
  * GET/
