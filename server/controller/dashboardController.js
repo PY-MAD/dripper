@@ -190,9 +190,12 @@ exports.updateRecipeBtn = async(req,res)=>{
     try {
         let imageUploadFile;
         let uploadPath;
-        let newImageName = "";
+        let newImageName;
         if(!req.files || Object.keys(req.files).length === 0){
-            console.log("No files where uploaded");
+            let imageFound = await Recipe.findById({
+                _id:req.params.id
+            })
+            newImageName = imageFound.image
         }else{
             imageUploadFile = req.files.image;
             newImageName = Date.now() + imageUploadFile.name;
@@ -203,10 +206,6 @@ exports.updateRecipeBtn = async(req,res)=>{
                 }
             })
         }
-        let imageFound = await Recipe.findById({
-            _id:req.params.id
-        })
-        newImageName === "" ? imageFound.image:newImageName;
         await Recipe.findByIdAndUpdate(
             {_id:req.params.id},
             {
