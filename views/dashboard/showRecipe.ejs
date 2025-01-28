@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="d-flex justify-content-between">
+        <div class="ShowRecipeimage w-100" style="background-image:url('/uploads/<%- recipe.image %>')">
+            <div class="ShowRecipeTitle">
+                <%- recipe.name %>
+            </div>
+            <div class="ShowRecipeCategory">
+                <%- recipe.category %>
+            </div>
+        </div>
+        <div class="cols w-25"></div>
+        <div class="cols w-100">
+            <div class="ShowRecipeDecs text-center">
+                <%- recipe.description %>
+            </div>
+            <ul class="list-group list-group-flush">
+                <% recipe.ingredients.forEach((item,index)=>{ %>
+                    <li class="list-group-item mb-3">pour <%- ++index %> : <%- item %> </li>
+                <% }) %>
+            </ul>
+            <div class="createdBy">
+                By <%- recipe.username %>
+            </div>
+        </div>
+    </div>
+
+</div>

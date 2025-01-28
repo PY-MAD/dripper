@@ -1,0 +1,19 @@
+<div class="my-5">
+    <div class="col">
+        <div class="title text-center mb-5">
+            <h1>the recipes</h1>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 g-lg-3 py-4 justify-content-around">
+            <% recipes.forEach((item)=>{%>
+                <a href="/dashboard/category/<%- category %>/<%- item._id %>" class="col text-center category_link">
+                    <div class="category_img rounded-3">
+                        <img src="/uploads/<%- item.image %>" class="rounded-3" width="240px" alt="">
+                    </div>
+                    <div class="pt-1 category_title link-secondary text-center"><%- item.name %></div>
+                    <div class="pt-1 category_title link-secondary text-center"> By <%- item.username %></div>
+                </a>
+            <% }) %>
+            <!-- Add more items as needed -->
+        </div>
+    </div>
+</div>

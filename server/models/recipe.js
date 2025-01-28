@@ -14,15 +14,23 @@ const RecipeSchema = new Schema({
         require:true,
     },
     category:{
-        type:Array,
-        enum:["fruity","classic","soury"],
+        type:[String],
+        enum:['fruity','classic','soury'],
         require:true,
     },
     image:{
         type:String,
         require:true,
+    },
+    user:{
+        type:Schema.ObjectId,
+        require:true
+    },
+    username:{
+        type:String,
+        require:true
     }
 })
 
 
-exports.module = mongoose.model("recipe",RecipeSchema);
+module.exports = mongoose.model("recipe",RecipeSchema);

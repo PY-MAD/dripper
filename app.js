@@ -6,8 +6,7 @@ const connectDB = require("./server/config/db");
 const session = require("express-session");
 const passport = require("passport");
 const MongoStore = require("connect-mongo");
-const fileUpload = require("express-fileupload");
-const flash = require("connect-flash");
+const uploader = require("express-fileupload");
 
 
 const app = express();
@@ -24,15 +23,13 @@ app.use(session({
 
 app.use(methodOverride("_method"));
 
-// flash
-app.use(flash);
-
-// upload files
-app.use(fileUpload)
 
 // passPort
 app.use(passport.initialize());
 app.use(passport.session());
+
+// uploader
+app.use(uploader())
 
 
 // connect to db
@@ -48,10 +45,6 @@ app.set("views", "./views");
 app.set("view engine", "ejs");
 
 
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send('Something broke!');
-});
 
 // Routes
 const routes = require("./server/routes/recipeRoutes");
@@ -68,6 +61,6 @@ app.use("*",(req,res)=>{
 })
 
 // Start server
-app.listen(port, (ip) => {
+app.listen(port, () => {
   console.log("we are listen at port : " + port);
 });
