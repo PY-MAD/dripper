@@ -9,6 +9,22 @@
             <label for="description" class="">description of recipe : </label>
             <textarea class="form-control" name="description" id="description" placeholder="add the description..."></textarea>
         </div>
+        <div class="time form-group my-3">
+            <label for="description" class="">time to finish </label>
+            <div class="d-flex">
+                <input type="number" min="0" max="60" class="form-control" name="mins" id="mins" placeholder="add the mins...">
+                <input type="number" min="0" max="60" class="form-control" name="secs" id="secs" placeholder="add the secs...">
+            </div>
+        </div>
+        <div class="time form-group my-3 d-flex">
+            <label for="description" class="">hot or iced </label>
+            <div>
+                <input type="radio" min="0" max="60" class="form-check-input" name="hotOrIced" value="hot" id="hot">
+                <label for="hot">hot</label>
+                <input type="radio" min="0" max="60" class="form-check-input" name="hotOrIced" value="iced" id="iced">
+                <label for="iced">iced</label>
+            </div>
+        </div>
         <div class="descripiton form-group my-3">
             <label for="Ingredients" class="">Ingredients of recipe : </label>
             <div class="ingredientsList">

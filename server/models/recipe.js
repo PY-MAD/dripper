@@ -9,6 +9,18 @@ const RecipeSchema = new Schema({
         type:String,
         require:true,
     },
+    mins:{
+        type:String,
+        require:true,
+    },
+    secs:{
+        type:String,
+        require:true,
+    },
+    hotOrIced:{
+        type:String,
+        require:true,
+    },
     ingredients:{
         type:Array,
         require:true,

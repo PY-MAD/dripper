@@ -10,14 +10,24 @@
         </div>
         <div class="cols w-25"></div>
         <div class="cols w-100">
-            <div class="ShowRecipeDecs text-center">
+            <br>
+            <br>
+            <div class="ShowRecipeDecs text-end">
                 <%- recipe.description %>
             </div>
+            <br>
+            <br>
+            <br>
             <ul class="list-group list-group-flush">
+                <li class="list-group-item mb-3">time to finish : <%- recipe.mins.length === 1 ? "0"+recipe.mins : recipe.mins%> : <%- recipe.secs %></li>
+                <li class="list-group-item mb-3">type of coffee : <%- recipe.hotOrIced %></li>
                 <% recipe.ingredients.forEach((item,index)=>{ %>
                     <li class="list-group-item mb-3">pour <%- ++index %> : <%- item %> </li>
                 <% }) %>
             </ul>
+            <br>
+            <br>
+            <br>
             <div class="createdBy">
                 By <%- recipe.username %>
             </div>

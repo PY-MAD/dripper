@@ -12,9 +12,12 @@
                         </div>
                         <div class="pt-1 category_title link-secondary text-center"><%- item.name %></div>
                     </a>
-                    <form action="/dashboard/delete/<%- item._id %>?_method=DELETE" method="post">
-                        <button type="submit" class="btn btn-danger">DELETE</button>
-                    </form>
+                    <div class="d-flex justify-content-center mt-3">
+                        <form action="/dashboard/delete/<%- item._id %>?_method=DELETE" method="post">
+                            <button type="submit" class="btn btn-danger">DELETE</button>
+                        </form>
+                        <a href="/dashboard/update/<%- item._id %>" class="btn btn-primary">UPDATE</a>
+                    </div>
                 </div>
             <% }) %>
             <!-- Add more items as needed -->
