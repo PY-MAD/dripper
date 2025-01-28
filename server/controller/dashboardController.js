@@ -4,12 +4,20 @@ let Recipe = require("../models/recipe")
  * Dashboard Page/
  */
 exports.dashboard = async(req,res)=>{
-    res.render("dashboard/index",{
-        pageTitle:"dashboard",
-        activePage:"dashboard",
-        user: req.user,
-        layout:"./layouts/main_afterLoggedIn.ejs"
-    })
+    try {
+        if(req.user){
+            res.render("dashboard/index",{
+                pageTitle:"dashboard",
+                activePage:"dashboard",
+                user: req.user,
+                layout:"./layouts/main_afterLoggedIn.ejs"
+            })
+        }else{
+            res.redirect("/error")
+        }
+    } catch (error) {
+        console.log(error);
+    }
 }
 /**
  * GET
@@ -28,7 +36,7 @@ exports.myRecipes = async(req,res)=>{
             layout:"./layouts/main_afterLoggedIn.ejs"
         })
     } catch (error) {
-        
+        res.redirect("/error")
     }
 }
 /**
@@ -37,14 +45,18 @@ exports.myRecipes = async(req,res)=>{
  */
 exports.categoryRecipes = async(req,res)=>{
     try {
-        res.render("dashboard/categoryRecipes",{
-            pageTitle:"category",
-            activePage:"category",
-            user: req.user,
-            layout:"./layouts/main_afterLoggedIn.ejs"
-        })
+        if(req.user){
+            res.render("dashboard/categoryRecipes",{
+                pageTitle:"category",
+                activePage:"category",
+                user: req.user,
+                layout:"./layouts/main_afterLoggedIn.ejs"
+            })
+        }else{
+            res.redirect("/error")
+        }
     } catch (error) {
-        
+        console.log(error);
     }
 }
 /**
@@ -53,19 +65,23 @@ exports.categoryRecipes = async(req,res)=>{
  */
 exports.categorySpecificRecipes = async(req,res)=>{
     try {
-        let findRecipe = await Recipe.find({
-            category:req.params.category
-        })
-        res.render("dashboard/Recipes",{
-            pageTitle:"category",
-            activePage:"category",
-            user: req.user,
-            recipes:findRecipe,
-            category:req.params.category,
-            layout:"./layouts/main_afterLoggedIn.ejs"
-        })
+        if(req.user){
+            let findRecipe = await Recipe.find({
+                category:req.params.category
+            })
+            res.render("dashboard/Recipes",{
+                pageTitle:"category",
+                activePage:"category",
+                user: req.user,
+                recipes:findRecipe,
+                category:req.params.category,
+                layout:"./layouts/main_afterLoggedIn.ejs"
+            })
+        }else{
+            res.redirect("/error")
+        }
     } catch (error) {
-        
+        console.log(error);
     }
 }
 /**
@@ -74,19 +90,23 @@ exports.categorySpecificRecipes = async(req,res)=>{
  */
 exports.displayTheRecipe = async(req,res)=>{
     try {
-        let recipeFind = await Recipe.findOne({
-            _id: req.params.id
-        });
-        res.render("dashboard/showRecipe",{
-            pageTitle:"Recipes",
-            activePage:"Recipes",
-            user: req.user,
-            recipe:recipeFind,
-            layout:"./layouts/main_afterLoggedIn.ejs"
-        })
+        if(req.user){
+            let recipeFind = await Recipe.findOne({
+                _id: req.params.id
+            });
+            res.render("dashboard/showRecipe",{
+                pageTitle:"Recipes",
+                activePage:"Recipes",
+                user: req.user,
+                recipe:recipeFind,
+                layout:"./layouts/main_afterLoggedIn.ejs"
+            })
+        }else{
+            res.redirect("/error");
+        }
 
     } catch (error) {
-        
+        console.log(error);
     }
 }
 
@@ -95,12 +115,16 @@ exports.displayTheRecipe = async(req,res)=>{
  * AddRecipe Page/
  */
 exports.addRecipe = async(req,res)=>{
-    res.render("dashboard/add",{
-        pageTitle:"add recipe",
-        activePage:"add recipe",
-        user: req.user,
-        layout:"./layouts/main_afterLoggedIn.ejs"
-    })
+    if(req.user){
+        res.render("dashboard/add",{
+            pageTitle:"add recipe",
+            activePage:"add recipe",
+            user: req.user,
+            layout:"./layouts/main_afterLoggedIn.ejs"
+        })
+    }else{
+        res.redirect("/error");
+    }
 }
 /**
  * POST

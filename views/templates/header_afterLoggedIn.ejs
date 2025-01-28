@@ -13,18 +13,15 @@
         <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
             <div class="text-start d-flex flex-row-reverse align-items-center mb-3 pointer">
                 <div class="img mx-3">
-                    <img src="<%-user.profileImage %>" class="rounded-5" width="30px" alt="">
+                    <img src="/icons/boy.png" class="rounded-5" width="30px" alt="">
                 </div>
                 <div class="username link-secondary"><%- user.firstName %></div>
             </div>
         </a>
         <div class="collapse" id="collapseExample">
             <div class="">
-                    <a href="/logout" class="btn btn-danger">logout</a>
+                    <a href="/logout" class="btn btn-s btn-danger">logout</a>
             </div>
         </div>
-        <form method="POST" action="/search" autocomplete="off">
-            <input type="search" class="form-control" name="searchTerm" id="searchTerm" placeholder="Search...">
-        </form>
     </div>
 </header>

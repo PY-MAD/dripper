@@ -6,5 +6,6 @@ const recipeController = require("../controller/recipeController");
 router.get("/", recipeController.homePage);
 router.get("/about", recipeController.aboutPage);
 router.get("/contact", recipeController.contactPage);
+router.get("/userNotFound", recipeController.userNotFound);
 // Export the router
 module.exports = router;

@@ -37,3 +37,16 @@ exports.contactPage = async(req,res)=>{
         layout:"./layouts/main.ejs"
     });
 }
+
+/**
+ * GET/
+ * Contact
+ */
+
+exports.userNotFound = async(req,res)=>{
+    res.render("userNotFound",{
+        pageTitle:"user not found",
+        activePage:"user not found",
+        layout:"./layouts/main.ejs"
+    });
+}
