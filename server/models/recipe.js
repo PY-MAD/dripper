@@ -9,6 +9,14 @@ const RecipeSchema = new Schema({
         type:String,
         require:true,
     },
+    temperature:{
+        type:String,
+        require:true,
+    },
+    weight:{
+        type:String,
+        require:true,
+    },
     mins:{
         type:String,
         require:true,

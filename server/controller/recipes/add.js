@@ -50,6 +50,8 @@ exports.addRecipeBtn = async(req,res)=>{
             const newRecipe = new Recipe({
                 name: req.body.name,
                 description:req.body.description,
+                temperature:req.body.temperature,
+                weight:req.body.weight,
                 ingredients:req.body.ingredients,
                 mins:req.body.mins,
                 secs:req.body.secs,
