@@ -42,31 +42,31 @@ Dripper is a web application that helps users discover and share their favorite 
 ### Some Screenshots of the Project
 
 #### Dashboard
-![Dashboard Screenshot](https://ibb.co/chH4HbXc)
+![Dashboard Screenshot](https://i.ibb.co/fd5j58GY/Screenshot-2025-02-01-at-3-59-43-am.png)
 This is where you can find all the navigation you need.
 
 #### Upload a Recipe
-![Upload Recipe Screenshot](https://ibb.co/DPSRcRfB)
+![Upload Recipe Screenshot](https://i.ibb.co/ZRkM4MzQ/Screenshot-2025-02-01-at-4-00-09-am.png)
 In this page, you can upload your own recipes for everyone to see!
 
 #### Discover All the Recipes
-![Discover Recipes Screenshot](https://ibb.co/Xxnt1mqD)
+![Discover Recipes Screenshot](https://i.ibb.co/5hQLmqPk/Screenshot-2025-02-01-at-4-00-22-am.png)
 In this page, you can choose the type of recipe you want.
 
 #### Choose a Recipe
-![Choose Recipe Screenshot](https://ibb.co/prvJKMmX)
+![Choose Recipe Screenshot](https://i.ibb.co/VpW2CzKB/Screenshot-2025-02-01-at-4-00-37-am.png)
 In this page, you can find all the recipes uploaded by other users!
 
 #### More Details
-![More Details Screenshot](https://ibb.co/HTVWQcNj)
+![More Details Screenshot](https://i.ibb.co/3m7DHxfn/Screenshot-2025-02-01-at-4-00-55-am.png)
 In this page, you can find out more about the recipe you have chosen.
 
 #### My Recipe
-![My Recipe Screenshot](https://ibb.co/Pzxyjt0b)
+![My Recipe Screenshot](https://i.ibb.co/Dg4FWLT6/Screenshot-2025-02-01-at-4-01-13-am.png)
 In this page, you can find all the recipes you have uploaded and manage them.
 
 #### Contact Us
-![Contact Us Screenshot](https://ibb.co/qLMqCzXj)
+![Contact Us Screenshot](https://i.ibb.co/HLDwC014/Screenshot-2025-02-01-at-4-01-21-am.png)
 
 ---
 
