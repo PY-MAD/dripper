@@ -104,7 +104,6 @@ The flow chart for Dripper outlines the structure and functionality of the web a
    SENDER_EMAIL=dripper931@gmail.com
    ```
 
-**⚠️ Important:** Ensure that sensitive credentials are stored securely and not exposed in public repositories.
 
 ---
 
