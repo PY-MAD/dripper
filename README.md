@@ -41,17 +41,38 @@ Dripper is a web application that helps users discover and share their favorite 
 
 ### Some Screenshots of the Project
 
-- **Dashboard:** This is where you can find all the navigation you need.
-- **Upload a Recipe:** Upload your own recipes for everyone to see!
-- **Discover All the Recipes:** Choose the type of recipe you want.
-- **Choose a Recipe:** Browse all recipes uploaded by other users.
-- **More Details:** View detailed information about a chosen recipe.
-- **My Recipe:** Manage all the recipes you have uploaded.
-- **Contact Us:** Reach out for support or feedback.
+#### Dashboard
+![Dashboard Screenshot](https://ibb.co/chH4HbXc)
+This is where you can find all the navigation you need.
+
+#### Upload a Recipe
+![Upload Recipe Screenshot](https://ibb.co/DPSRcRfB)
+In this page, you can upload your own recipes for everyone to see!
+
+#### Discover All the Recipes
+![Discover Recipes Screenshot](https://ibb.co/Xxnt1mqD)
+In this page, you can choose the type of recipe you want.
+
+#### Choose a Recipe
+![Choose Recipe Screenshot](https://ibb.co/prvJKMmX)
+In this page, you can find all the recipes uploaded by other users!
+
+#### More Details
+![More Details Screenshot](https://ibb.co/HTVWQcNj)
+In this page, you can find out more about the recipe you have chosen.
+
+#### My Recipe
+![My Recipe Screenshot](https://ibb.co/Pzxyjt0b)
+In this page, you can find all the recipes you have uploaded and manage them.
+
+#### Contact Us
+![Contact Us Screenshot](https://ibb.co/qLMqCzXj)
 
 ---
 
 ## Flow Chart
+![Flow Chart](https://media.discordapp.net/attachments/1115430930140635136/1335053763345649664/web.drawio.png?ex=679ec535&is=679d73b5&hm=ef0a185009b400d9ceeae59709a7db6ab2cc6a82064c50ed6c19dca3f69c9a12&)
+
 The flow chart for Dripper outlines the structure and functionality of the web application, which is designed to help users discover and share coffee recipes.
 
 ---
