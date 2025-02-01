@@ -42,31 +42,31 @@ Dripper is a web application that helps users discover and share their favorite 
 ### Some Screenshots of the Project
 
 #### Dashboard
-![Dashboard Screenshot](https://i.ibb.co/fd5j58GY/Screenshot-2025-02-01-at-3-59-43-am.png)
+![Dashboard Screenshot](https://media.discordapp.net/attachments/1115430930140635136/1335053224994144256/image.png?ex=679ec4b4&is=679d7334&hm=295bf0f57e18d81e96508a3ac81a55a2ecf9b922892c93bab0e3a9033634bb93&)
 This is where you can find all the navigation you need.
 
 #### Upload a Recipe
-![Upload Recipe Screenshot](https://i.ibb.co/ZRkM4MzQ/Screenshot-2025-02-01-at-4-00-09-am.png)
+![Upload Recipe Screenshot](https://media.discordapp.net/attachments/1115430930140635136/1335053323484663860/image.png?ex=679ec4cc&is=679d734c&hm=6d4d58946ee53093ca594060ded3c4973cae8c6909f98db45e1b7f64566eb806&)
 In this page, you can upload your own recipes for everyone to see!
 
 #### Discover All the Recipes
-![Discover Recipes Screenshot](https://i.ibb.co/5hQLmqPk/Screenshot-2025-02-01-at-4-00-22-am.png)
+![Discover Recipes Screenshot](https://media.discordapp.net/attachments/1115430930140635136/1335053429717860444/image.png?ex=679ec4e5&is=679d7365&hm=88402169d5591a41b14c6aae77cf2f57fc00060b159f32221b8f7f06cef68cd7&)
 In this page, you can choose the type of recipe you want.
 
 #### Choose a Recipe
-![Choose Recipe Screenshot](https://i.ibb.co/VpW2CzKB/Screenshot-2025-02-01-at-4-00-37-am.png)
+![Choose Recipe Screenshot](https://media.discordapp.net/attachments/1115430930140635136/1335053506909962301/image.png?ex=679ec4f8&is=679d7378&hm=b527b892152b61f31bc8f26a7acbf7f307352bdefbc517be5d4aa25dae7d5720&)
 In this page, you can find all the recipes uploaded by other users!
 
 #### More Details
-![More Details Screenshot](https://i.ibb.co/3m7DHxfn/Screenshot-2025-02-01-at-4-00-55-am.png)
+![More Details Screenshot](https://media.discordapp.net/attachments/1115430930140635136/1335053554267717654/image.png?ex=679ec503&is=679d7383&hm=d851e3607b42e11d875296ee3fe253a7dafd87d73ebdb836660906d0e1b42e3c&)
 In this page, you can find out more about the recipe you have chosen.
 
 #### My Recipe
-![My Recipe Screenshot](https://i.ibb.co/Dg4FWLT6/Screenshot-2025-02-01-at-4-01-13-am.png)
+![My Recipe Screenshot](https://media.discordapp.net/attachments/1115430930140635136/1335053640922300488/image.png?ex=679ec518&is=679d7398&hm=dd6551b732027b6262c7086109f15a7099c796fb104cf4bada0638491ecae146&)
 In this page, you can find all the recipes you have uploaded and manage them.
 
 #### Contact Us
-![Contact Us Screenshot](https://i.ibb.co/HLDwC014/Screenshot-2025-02-01-at-4-01-21-am.png)
+![Contact Us Screenshot](https://media.discordapp.net/attachments/1115430930140635136/1335053700825354302/image.png?ex=679ec526&is=679d73a6&hm=c0c348b4dd4fb702dcdc77765cb5df97645f139b25ce9fcff455d3438e20f4f7&)
 
 ---
 
