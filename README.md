@@ -5,13 +5,14 @@
 **CS Department**  
 **Course Title:** Web Application Development  
 **Course Code:** CS346  
+**Class:** 172  
 **Course Instructors:** Dr. Sultan Naaman Qasim  
 
 ---
 
 # Dripper (Course Project)
 
-**Class:** 172  
+
 
 ### Students
 | Name                   | Academic No. |
